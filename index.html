@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>3 En Raya</title>
+    <link rel="stylesheet" type="text/css" href="/juego-gato/src/css/styles.css">
+
 </head>
 <body>
-    
+    <h1 id="tres">3 En Raya </h1>
+
+
+    <div id="div">
+        <label id="modo" for="gameMode">Modo de Juego</label>
+        <select id="gameMode">
+            <option value="pvp">Jugador vs Jugador</option>
+            <option value="pvc">Jugador vs Máquina</option>
+        </select>
+    </div>
+
+
+    <div id="board">
+        <div class="casilla" id="b1" onclick="makeMove(0)"></div>
+        <div class="casilla" id="b2" onclick="makeMove(1)"></div>
+        <div class="casilla" id="b3" onclick="makeMove(2)"></div>
+
+        <div class="casilla" id="b4" onclick="makeMove(3)"></div>
+        <div class="casilla" id="b5" onclick="makeMove(4)"></div>
+        <div class="casilla" id="b6" onclick="makeMove(5)"></div>
+
+        <div class="casilla" id="b7" onclick="makeMove(6)"></div>
+        <div class="casilla" id="b8" onclick="makeMove(7)"></div>
+        <div class="casilla" id="b9" onclick="makeMove(8)"></div>
+    </div>
+
+    <button id="resetBtn" onclick="reset()">RESET</button>
+
+
+    <p id="print"></p>
+
+    <script src="/juego-gato/src/Javascript/script.js"></script>
 </body>
 </html>
